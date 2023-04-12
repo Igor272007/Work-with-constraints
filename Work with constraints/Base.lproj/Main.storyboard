@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -13,32 +13,36 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Work_with_constraints" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <view key="view" contentMode="scaleToFill" id="a6d-mP-kz1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m0O-F4-Bp2">
-                                <rect key="frame" x="76" y="88" width="240" height="326"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lg8-Ji-3Pl">
+                                <rect key="frame" x="20" y="40" width="374" height="320"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="98p-KG-7vq">
-                                <rect key="frame" x="76" y="474" width="240" height="321"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AWS-jD-HoI">
+                                <rect key="frame" x="20" y="389" width="374" height="327"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="8gW-37-s6i"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="m0O-F4-Bp2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6hN-At-Vk7"/>
-                            <constraint firstItem="m0O-F4-Bp2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="oEN-0s-Jn4"/>
-                            <constraint firstItem="98p-KG-7vq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v6w-kS-EpH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="98p-KG-7vq" secondAttribute="bottom" constant="23" id="xtb-Ag-Fgh"/>
+                            <constraint firstItem="AWS-jD-HoI" firstAttribute="height" secondItem="lg8-Ji-3Pl" secondAttribute="height" multiplier="1.02121" id="8dm-Rl-gAd"/>
+                            <constraint firstItem="AWS-jD-HoI" firstAttribute="leading" secondItem="8gW-37-s6i" secondAttribute="leading" constant="20" id="AQz-eg-CZt"/>
+                            <constraint firstItem="8gW-37-s6i" firstAttribute="trailing" secondItem="AWS-jD-HoI" secondAttribute="trailing" constant="20" id="K6Y-v9-p4T"/>
+                            <constraint firstItem="lg8-Ji-3Pl" firstAttribute="top" secondItem="8gW-37-s6i" secondAttribute="top" constant="20" id="PSH-6b-b49"/>
+                            <constraint firstItem="AWS-jD-HoI" firstAttribute="top" secondItem="lg8-Ji-3Pl" secondAttribute="bottom" constant="29" id="lfC-1a-yWM"/>
+                            <constraint firstItem="8gW-37-s6i" firstAttribute="trailing" secondItem="lg8-Ji-3Pl" secondAttribute="trailing" constant="20" id="pk2-q9-LEn"/>
+                            <constraint firstItem="lg8-Ji-3Pl" firstAttribute="leading" secondItem="8gW-37-s6i" secondAttribute="leading" constant="20" id="sIr-x8-6Pb"/>
+                            <constraint firstItem="8gW-37-s6i" firstAttribute="bottom" secondItem="AWS-jD-HoI" secondAttribute="bottom" constant="20" id="vMg-aW-YnV"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="133.33333333333334" y="2.4456521739130435"/>
         </scene>
     </scenes>
     <resources>
